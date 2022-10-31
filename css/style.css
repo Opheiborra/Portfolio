@@ -1,0 +1,322 @@
+/* banner */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 100px;
+  height: 150px;
+  border-radius: 90%;
+}
+
+li {
+  list-style: none;
+}
+
+
+nav {
+  background-color: #9b807e;
+   width: 100%;
+   height: 70px;
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+  position:fixed;
+  top :0;
+  right:0;
+  
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+}
+
+header li {
+  margin: 50px;
+}
+
+.banner {
+  background-image: url(/img/Banniere.jpg);
+  background-attachment: fixed;
+  height: 550px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.banner h2 {
+
+  padding: 10px;
+}
+
+.tiret {
+  background-color: #9b807e;
+  width: 10%;
+  height: 3px;
+  margin: 20px;
+
+}
+
+.button-56 {
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  /* position: relative; */
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-56:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.button-56:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-56:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.button-56:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-56 {
+    padding: 0 40px;
+  }
+}
+
+/* .backgroundOpacity {
+     height: 550px;
+    opacity: .65;
+    background-color: black;
+}  */
+
+/* a propos */
+
+.propos {
+  margin: 20px;
+  padding: 20px;
+  background-color: #9b807e;
+}
+
+.description {
+  display: flex;
+}
+
+.propos h1 {
+  margin: 20px;
+  text-align: center;
+}
+
+.imgPropos {
+  width: 250px;
+}
+
+.propos p {
+  margin: 50px;
+  text-align: justify;
+}
+
+/* COmpétences */
+.competences {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f0e5e4;
+}
+.langage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.competences h1,
+.competences p {
+  margin: 20px;
+  text-align: center;
+}
+.front, .back, .CMS{
+  padding: 50px;
+}
+
+.competences h2{
+  margin-bottom: 10px;
+}
+.imgCV {
+  width: 150px;
+  margin: 10px;
+}
+
+.jepludenom {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* quote */
+.quote {
+  background-image: url(/img/Banniere2.jpg);
+  background-attachment: fixed;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  font-size: 40px;
+}
+
+.quote p {
+  text-align: center;
+  display: flex;
+  align-items: center;
+ 
+}
+
+/* Projet */
+
+.projet{
+  margin: 20px;
+  padding: 20px;
+  background-color: #f0e5e4;
+  text-align: center;
+}
+
+.projet img{
+  width: 150px;
+  border-radius: 90%;
+}
+
+.lien{
+  padding: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+/* Contact */
+   
+.contact {  
+  width: 700px;
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 10px;
+  background: white;
+  margin: auto;}
+
+.bg{
+  background-image: url(/img/Banniere2.jpg);
+  background-attachment: fixed;
+  height: 830px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px;
+}
+
+
+  .lol{
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+
+form div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 83px;
+  margin-top: 25px;
+}
+
+
+form div > input, form div > select, form div > textarea {
+  background: #a7d5e7;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+form div > input, form div > select {
+  height: 50px;
+  padding-left: 10px;
+}
+
+form div > textarea {
+  height: 155px;
+  padding: 15px 0px 0px 10px;
+}
+
+form div > input::placeholder, form div > textarea::placeholder {
+  color: white;
+}
+
+form div > select:invalid {
+  color: white;
+}
+
+ form div > select option {  /* dans menu deroulant*/
+  background: white;
+  color: #303030;
+} 
+
+.partieDroite{
+  font-size: 10px;
+  padding: 50px;
+}
+
+i{
+  margin:20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+footer{
+  background-color: #9b807e;
+  width: 100%;
+  height: 70px;
+  color: black;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
