@@ -13,7 +13,10 @@
 li {
   list-style: none;
 }
-
+a{
+  text-decoration: none;
+  color:white;
+}
 
 nav {
   background-color: #9b807e;
@@ -75,7 +78,6 @@ header li {
   display: flex;
   font-family: Inter, sans-serif;
   font-size: 16px;
-  height: 48px;
   justify-content: center;
   line-height: 24px;
   max-width: 100%;
@@ -88,12 +90,11 @@ header li {
   touch-action: manipulation;
 }
 
-.button-56:after {
+ .button-56:after {
   background-color: #111;
   border-radius: 8px;
   content: "";
   display: block;
-  height: 48px;
   left: 0;
   width: 100%;
   position: absolute;
@@ -101,7 +102,7 @@ header li {
   transform: translate(8px, 8px);
   transition: transform .2s ease-out;
   z-index: -1;
-}
+} 
 
 .button-56:hover:after {
   transform: translate(0, 0);
